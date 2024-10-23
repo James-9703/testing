@@ -33,3 +33,5 @@ summary
 prototype is wood material with screws, dhaarshina consult with workshop
 based on market research, decided on selling rm 9 per piece, if bundle of 5, rm8.5per piece: rm42.5
 location: online, airport
+some modified text
+some unstaged modified text
