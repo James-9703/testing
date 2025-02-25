@@ -44,31 +44,31 @@ Usage
     Open your browser and navigate to http://localhost:9090/.
     Run the query ```up ```to verify that the Kafka broker instance is online.
 
-2. Start the User Activity Producer
+2. Start the User Activity Producer in a new shell
 This application generates and sends user activity data to the Kafka broker:
 ```bash
 cd producer/app/build/libs/
 java -jar app.jar
 ```
-3. Start the Sudo Command Watcher
+3. Start the Sudo Command Watcher in a new shell
 This application monitors sudo commands and sends them to the Kafka broker:
 ```bash
 cd ~/UAM/sudoWatch/app/build/libs/
 java -jar app.jar
 ```
-4. Test with a Sample Sudo Command
+4. Test with a Sample Sudo Command in a new shell
 Run a sudo command to produce sample data:
 ```bash
 sudo ls
 ```
-5. Start Stream Processing
+5. Start Stream Processing in a new shell
 Launch the Kafka Streams applications to process data for security violations and audit logging:
 ```bash
 
 cd ~/UAM/
 docker compose -f process.yml up
 ```
-6. Verify Sudo Command Logging
+6. Verify Sudo Command Logging in a new shell
 Check if the sudo command is logged in the PostgreSQL database:
 ```bash
 
