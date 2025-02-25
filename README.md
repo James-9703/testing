@@ -2,14 +2,19 @@
 # User Activity Monitoring System (UAM)
 This project is a User Activity Monitoring (UAM) system built using Apache Kafka, PostgreSQL, ksqlDB, and Docker. It tracks user activities, monitors sudo commands, detects security violations, and logs events for auditing purposes. The system leverages Kafka for real-time data streaming, kafka stream and ksqlDB for stream processing, PostgreSQL for persistent storage, and Prometheus for monitoring.
 
+---
+
 ## Features
 
-Real-time User Activity Tracking: A producer sends user activity data to a Kafka broker at fixed intervals.
-Sudo Command Monitoring: A dedicated producer watches for sudo commands and forwards them to the Kafka broker.
-Security Violation Detection: A Kafka Streams application identifies potential security violations from user activity.
-Audit Trail: Sudo commands are logged into a PostgreSQL database for auditing.
-Monitoring: Prometheus tracks the Kafka broker's online status.
-Containerized Deployment: All components (Kafka broker, PostgreSQL, Prometheus, ksqlDB, and ksql CLI) are managed via Docker Compose.
+- **Real-time User Activity Tracking:** A producer sends user activity data to a Kafka broker at fixed intervals.
+- **Sudo Command Monitoring:** A dedicated producer watches for sudo commands and forwards them to the Kafka broker.
+- **Security Violation Detection:** A Kafka Streams application identifies potential security violations from user activity.
+- **Audit Trail:** Sudo commands are logged into a PostgreSQL database for auditing.
+- **Monitoring:** Prometheus tracks the Kafka broker's online status.
+- **Containerized Deployment:** All components (Kafka broker, PostgreSQL, Prometheus, ksqlDB, and ksql CLI) are managed via Docker Compose.
+
+---
+
 
 ## Prerequisites
 Before setting up the system, ensure you have the following installed:
