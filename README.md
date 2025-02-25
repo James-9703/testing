@@ -38,11 +38,11 @@ Install Dependencies
     docker compose -f kafka.yml up
 ```
 Usage
-1. Monitor with Prometheus
-Prometheus is used to monitor the Kafka broker's status. After starting the core services:
+1. Monitor with Prometheus.
+    Prometheus is used to monitor the Kafka broker's status. After starting the core services:
 
     Open your browser and navigate to http://localhost:9090/.
-    Run the query up to verify that the Kafka broker instance is online.
+    Run the query ```up ```to verify that the Kafka broker instance is online.
 
 2. Start the User Activity Producer
 This application generates and sends user activity data to the Kafka broker:
